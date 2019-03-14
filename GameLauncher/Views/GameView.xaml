@@ -6,9 +6,19 @@
              xmlns:local="clr-namespace:GameLauncher.Views"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Background="#FFD7F0EC">
-        <Label x:Name="label" Content="{Binding Path=Game.name}" Margin="27,0,22,174" VerticalAlignment="Bottom" Height="43" RenderTransformOrigin="0.53,1.226"/>
-        <Button x:Name="LaunchGame1Button" Content="Play Game" Command="{Binding PlayGameCommand}" Margin="98,0,92,87" VerticalAlignment="Bottom" Background="#FF249DB8" BorderBrush="{x:Null}" RenderTransformOrigin="-1.049,2.227"/>
-        <Button x:Name="Backbutton" Content="Back" Command ="{Binding BackCommand}" HorizontalAlignment="Left" Margin="27,0,0,38" VerticalAlignment="Bottom" Width="75" RenderTransformOrigin="0.56,-0.503"/>
+    <ScrollViewer>
+    <Grid Background="#FFD7F0EC" Margin="10,0,-215,-76">
+
+        <StackPanel Orientation="Vertical">
+            <Image Width="320" Height="480"  Stretch="Fill"  Source="{Binding Path = Game.image}" HorizontalAlignment="Center" Margin="100,0" >
+            </Image>
+            <Label x:Name="label" Content="{Binding Path=Game.name}"  Height="43" RenderTransformOrigin="0.53,1.226" Margin="20,200,200,20" HorizontalAlignment="Center"/>
+            <Label x:Name="info" Content="{Binding Path=Game.info}" Margin="27,0,22,65" VerticalAlignment="Bottom" Height="43" RenderTransformOrigin="0.53,1.226"/>
+            <StackPanel Orientation="Horizontal">
+            <Button x:Name="LaunchGame1Button" Content="Play Game" Command="{Binding PlayGameCommand}"  VerticalAlignment="Bottom" Background="#FF249DB8" BorderBrush="{x:Null}"  Width="100" HorizontalAlignment="Left" Margin="50,0"/>
+            <Button x:Name="Backbutton" Content="Back" Command ="{Binding BackCommand}" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Width="75"  Margin="50,0"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
+    </ScrollViewer>
 </UserControl>

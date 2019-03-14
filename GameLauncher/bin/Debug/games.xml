@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<Games>
+  <Game>
+      <Name>Chess</Name>
+      <Year>2012</Year>
+      <IsGrad>false</IsGrad>
+      <Info>Chess is a game developed in 2012 by XYZ and is a two player game.</Info>
+      <GamePath>C:\Program Files\Microsoft Games\Chess\Chess.exe</GamePath>
+      <ImagePath>C:\Users\drwiner\Desktop\chess.jpg</ImagePath>
+  </Game>
+  <Game>
+    <Name>Notepad</Name>
+    <Year>1993</Year>
+    <IsGrad>false</IsGrad>
+    <Info>Basic notepad Application.</Info>
+    <GamePath>notepad.exe</GamePath>
+    <ImagePath>C:\Users\drwiner\Desktop\notepad.jpg</ImagePath>
+  </Game>
+  <Game>
+      <Name>FreeCell</Name>
+      <Year>2002</Year>
+      <IsGrad>true</IsGrad>
+      <Info>Info about FreeCell.</Info>
+    <GamePath>C:\Program Files\Microsoft Games\FreeCell\FreeCell.exe</GamePath>
+    <ImagePath>C:\Users\drwiner\Desktop\freecell.jpg</ImagePath>
+  </Game>
+</Games>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace GameLauncher.Models
 {
@@ -29,6 +30,16 @@ namespace GameLauncher.Models
             get;
             set;
         }
+        public String image
+        {
+            get;
+            set;
+        }
+        public String info
+        {
+            get;
+            set;
+        }
         public String gradString
         {
             get
@@ -36,12 +47,15 @@ namespace GameLauncher.Models
                 return getGradString();
             }
         }
-        public Game(String name, int year, Boolean isGradGame, String link)
+       
+        public Game(String name, int year, Boolean isGradGame, String link, String image, String info)
         {
             this.name = name;
             this.year = year;
             this.isGradGame = isGradGame;
             this.link = link;
+            this.image = image;
+            this.info = info;
         }
         public String getGradString()
         {
@@ -50,6 +64,13 @@ namespace GameLauncher.Models
             else
                 return "Undergraduate";
         }
-
+        public BitmapImage makeImage(String path)
+        {
+            BitmapImage bmpi = new BitmapImage();
+            bmpi.BeginInit();
+            bmpi.UriSource = new Uri(path, UriKind.Absolute);
+            bmpi.EndInit();
+            return bmpi;
+        }
     }
 }

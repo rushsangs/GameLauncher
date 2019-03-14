@@ -7,7 +7,7 @@
         xmlns:viewmodels="clr-namespace:GameLauncher.ViewModels"
         xmlns:views="clr-namespace:GameLauncher.Views"
         mc:Ignorable="d"
-        Title="EAE Game Launcher" Height="350" Width="525">
+        Title="EAE Game Launcher" Height="1000" Width="1000">
     <Window.Resources>
         <DataTemplate DataType="{x:Type viewmodels:ListViewModel}">
             <views:ListView/>
@@ -16,6 +16,7 @@
             <views:GameView/>
         </DataTemplate>
     </Window.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -37,4 +38,5 @@
         <ContentControl x:Name="Pages" Grid.Row="1" Grid.Column="0" Grid.RowSpan="6" Grid.ColumnSpan="2" Content="{Binding SelectedViewModel}"/>
 
     </Grid>
+
 </Window>

@@ -28,6 +28,7 @@ namespace GameLauncher
             var viewModel = new NavigationViewModel();
             viewModel.SelectedViewModel = new ListViewModel(viewModel);
             this.DataContext = viewModel;
+
         }
 
         private void LaunchGame1Button_Click(object sender, RoutedEventArgs e)

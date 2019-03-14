@@ -18,3 +18,7 @@ C:\Users\drwiner\Documents\Rush\GameLauncher\GameLauncher\obj\Debug\GameLauncher
 C:\Users\drwiner\Documents\Rush\GameLauncher\GameLauncher\obj\Debug\GameLauncher.exe
 C:\Users\drwiner\Documents\Rush\GameLauncher\GameLauncher\obj\Debug\GameLauncher.pdb
 C:\Users\drwiner\Documents\Rush\GameLauncher\GameLauncher\obj\Debug\GameLauncher.csprojResolveAssemblyReference.cache
+C:\Users\drwiner\Documents\Rush\GameLauncher\GameLauncher\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\drwiner\Documents\Rush\GameLauncher\GameLauncher\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\drwiner\Documents\Rush\GameLauncher\GameLauncher\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\drwiner\Documents\Rush\GameLauncher\GameLauncher\bin\Debug\System.Windows.Interactivity.xml
